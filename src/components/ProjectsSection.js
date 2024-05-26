@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Card from "./Cards";
-import photo1 from "../assets/images/photo1.jpg";
-import photo2 from "../assets/images/photo2.jpg";
+import photo1 from "../assets/images/photo5.jpg";
+import photo2 from "../assets/images/photo6.jpg";
 import photo3 from "../assets/images/photo3.jpg";
 import "./ProjectsSection.css";
 
