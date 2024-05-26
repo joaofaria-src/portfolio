@@ -3,7 +3,7 @@ import Typing from "react-typing-effect";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./LandingSection.css";
-import profilepic from "../assets/images/profilepic2.jpg";
+import profilepic from "../assets/images/profilepic3.jpg";
 
 const LandingSection = () => {
   
