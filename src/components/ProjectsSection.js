@@ -10,7 +10,7 @@ import "./ProjectsSection.css";
 const projects = [
   { title: "Mangata & Gallo", description: "A web app for a jewelry store with user login/registration. Currently working on it's online shop.", imageSrc: photo1 },
   { title: "Little Lemon Restaurant", description: "A web app for the Little Lemon Restaurant. Users are able to make online reservations.", imageSrc: photo2 },
-  { title: "Supermarket List App", description: "Mobile app to keep on track with your groceries shopping lists.", imageSrc: photo3 },
+ /*{ title: "Supermarket List App", description: "Mobile app to keep on track with your groceries shopping lists.", imageSrc: photo3 },*/
 ];
 
 const ProjectsSection = () => {
