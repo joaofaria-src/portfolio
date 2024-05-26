@@ -1,0 +1,99 @@
+.contactme-section {
+  background-color: #512DA8;
+  color: white;
+  padding: 64px 32px;
+  text-align: left;
+}
+
+.contactme-section h1 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.contactme-section p {
+  text-align: center;
+}
+
+.form-container {
+  width: 22%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #673AB7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.social-links a {
+  margin-right: 20px;
+  color: white;
+}
+
+.alert {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.alert.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.alert.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.form-container .form-group .error {
+  color: red;
+  font-size: 14px;
+}

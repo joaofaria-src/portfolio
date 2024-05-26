@@ -1,0 +1,39 @@
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-content h3 {
+    margin: 0 0 8px 0;
+  }
+  
+  .card-content p {
+    color: #64748b;
+    font-size: 1rem;
+  }
+  
+  .see-more {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .see-more span {
+    margin-right: 8px;
+  }
+  
+  
