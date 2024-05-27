@@ -1,19 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import App from './App';
-import ReactGA from "react-ga4";
-
-ReactGA.initialize("G-29V6Q5VNF5");
-
-ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname,
-})
+import { trackPageView } from './analytics';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const AppWithTracking = () => {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location]);
+
+  return <App />;
+};
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <AppWithTracking />
+    </Router>
   </React.StrictMode>
 );
