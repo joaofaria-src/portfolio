@@ -48,8 +48,8 @@ const Header = () => {
           ))}
         </nav>
         <nav className="nav-links">
-          <a href="/#projects" onClick={handleClick("projects")}>Projects</a>
-          <a href="/#contactme" onClick={handleClick("contactme")}>Contact Me</a>
+          <a href="/projects" onClick={handleClick("projects")}>Projects</a>
+          <a href="/contactme" onClick={handleClick("contactme")}>Contact Me</a>
         </nav>
       </div>
     </div>
