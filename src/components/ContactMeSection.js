@@ -29,7 +29,7 @@ const ContactMeSection = () => {
     }),
     onSubmit: (values, { resetForm }) => {
       setIsSubmitting(true);
-      setAlertMessage(null);  
+      setAlertMessage(null);
 
       emailjs.send("service_znklakf", "template_7dmjqhf", {
         from_name: values.firstName,
