@@ -3,15 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./Cards.css";
 
-const Card = ({ title, description, imageSrc, animated }) => (
+const Card = ({ title, description, imageSrc, link, animated }) => (
   <div className={`card ${animated ? "animated" : ""}`}>
-    <img src={imageSrc} alt={title} className="card-image" />
+    <a href={link} target="_blank" rel="noopener noreferrer" className="card-link">
+      <img src={imageSrc} alt={title} className="card-image" />
+    </a>
     <div className="card-content">
       <h3>{title}</h3>
       <p>{description}</p>
       <div className="see-more">
-        <span>See more</span>
-        <FontAwesomeIcon icon={faArrowRight} />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <span>See more</span>
+          <FontAwesomeIcon icon={faArrowRight} />
+        </a>
       </div>
     </div>
   </div>
