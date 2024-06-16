@@ -30,16 +30,11 @@ const ContactMeSection = () => {
       setIsSubmitting(true);
       setAlertMessage(null);
 
-      emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: values.firstName,
-          from_email: values.email,
-          message: values.comment,
-        },
-        process.env.REACT_APP_EMAILJS_USER_ID
-      )
+      emailjs.send("service_znklakf", "template_7dmjqhf", {
+        from_name: values.firstName,
+        from_email: values.email,
+        message: values.comment,
+      }, "QRPbCGmJYeCNtRile")
       .then((response) => {
         setAlertMessage({ type: "success", text: "Message sent successfully!" });
         resetForm();
