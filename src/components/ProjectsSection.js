@@ -8,7 +8,7 @@ import "./ProjectsSection.css";
 
 const projects = [
   { title: "Mangata & Gallo", description: "A web app prototype for a jewelry store with user login/registration. Currently working on its online shop.", imageSrc: photo1, link: "https://project.joao-faria.com" },
-  { title: "Little Lemon Restaurant", description: "A web app for the Little Lemon Restaurant. Users are able to make online reservations.", imageSrc: photo2 },
+  { title: "Little Lemon Restaurant", description: "A web app for the Little Lemon Restaurant. Users are able to make online reservations.", imageSrc: photo2, link: "https://joaofaria-src.github.io/littlelemon/" },
 ];
 
 const ProjectsSection = () => {
